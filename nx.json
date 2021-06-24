@@ -19,6 +19,9 @@
     }
   },
   "projects": {
+    "material": {
+      "tags": []
+    },
     "site": {
       "tags": []
     },
