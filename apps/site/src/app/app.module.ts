@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from '@mtcd-net/material';
 
+import { LayoutModule } from '@mtcd-net/layout';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
@@ -15,6 +16,7 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
+    LayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
