@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mtcd-net/layout": ["libs/layout/src/index.ts"],
       "@mtcd-net/material": ["libs/material/src/index.ts"]
     }
   },
