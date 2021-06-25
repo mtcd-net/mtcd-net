@@ -1,17 +1,27 @@
-<mat-toolbar color="primary" fxLayout="row">
-  <span>Meta Code</span>
-  <span class="spacer"></span>
-  <span
-    mat-button
-    [routerLink]="['/auth/login']"
-    routerLinkActive="router-link-active"
-    >Login</span
-  >
-  <button mat-button>Logout</button>
-  <mat-icon
-    class="example-icon"
-    aria-hidden="false"
-    aria-label="Example user verified icon"
-    >verified_user</mat-icon
-  >
-</mat-toolbar>
+<header>
+  <mat-toolbar color="primary" fxLayout="row">
+    <!-- <button mat-button routerLink="/">
+         <mat-icon>home</mat-icon>
+         <span>{{ title }}</span>
+         </button> -->
+
+    <span>{{ title }}</span>
+
+    <nav>
+      <ul fxLayout>
+        <li>
+          <a mat-button routerLink="/home" routerLinkActive="active"> Home</a>
+        </li>
+        <li>
+          <a mat-button routerLink="/about" routerLinkActive="active">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <span class="spacer"></span>
+
+    <!-- <button mat-icon-button aria-label="Share icon">
+         <mat-icon>share</mat-icon>
+         </button> -->
+  </mat-toolbar>
+</header>
