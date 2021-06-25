@@ -8,9 +8,10 @@ import { MaterialModule } from '@mtcd-net/material';
 import { LayoutModule } from '@mtcd-net/layout';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, AboutComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
