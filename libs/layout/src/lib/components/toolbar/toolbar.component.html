@@ -1,1 +1,17 @@
-<p>toolbar works!</p>
+<mat-toolbar color="primary" fxLayout="row">
+  <span>Meta Code</span>
+  <span class="spacer"></span>
+  <span
+    mat-button
+    [routerLink]="['/auth/login']"
+    routerLinkActive="router-link-active"
+    >Login</span
+  >
+  <button mat-button>Logout</button>
+  <mat-icon
+    class="example-icon"
+    aria-hidden="false"
+    aria-label="Example user verified icon"
+    >verified_user</mat-icon
+  >
+</mat-toolbar>
