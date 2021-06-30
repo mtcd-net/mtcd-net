@@ -1,1 +1,17 @@
-<header>Header works!</header>
+<header>
+  <mat-toolbar color="primary">
+    <a mat-button routerLink="/" aria-label="Metacode">
+      <mat-icon class="mr-2 mb-1" aria-hidden="false" aria-label="Home icon"
+        >home</mat-icon
+      >
+      <span>Metacode</span>
+    </a>
+    <div>
+      <a mat-button routerLink="/products">Products</a>
+      <a mat-button routerLink="/services">Services</a>
+      <a mat-button routerLink="/camps">Camps</a>
+    </div>
+    <span fxFlex></span>
+    <button mat-button>Contact</button>
+  </mat-toolbar>
+</header>
