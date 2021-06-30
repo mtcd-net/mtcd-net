@@ -1,17 +1,24 @@
 <header>
-  <mat-toolbar color="primary">
-    <a mat-button routerLink="/" aria-label="Metacode">
-      <mat-icon class="mr-2 mb-1" aria-hidden="false" aria-label="Home icon"
-        >home</mat-icon
-      >
-      <span>Metacode</span>
-    </a>
-    <div>
-      <a mat-button routerLink="/products">Products</a>
-      <a mat-button routerLink="/services">Services</a>
-      <a mat-button routerLink="/camps">Camps</a>
-    </div>
+  <mat-toolbar
+    fxLayoutAlign="start center"
+    class="bg-sky-900 text-sky-100 shadow-md"
+  >
+    <a
+      class="uppercase hover:text-sky-200"
+      mat-button
+      routerLink="/"
+      aria-label="Metacode"
+      >Metacode</a
+    >
+    <a class="hover:text-sky-200" mat-button routerLink="/products">Products</a>
+    <a class="hover:text-sky-200" mat-button routerLink="/services">Services</a>
+    <a class="hover:text-sky-200" mat-button routerLink="/careers">Careers</a>
     <span fxFlex></span>
-    <button mat-button>Contact</button>
+    <button mat-button class="hover:text-purple-200 bg-purple-900 shadow">
+      <mat-icon class="mr-1" aria-hidden="false" aria-label="Email icon"
+        >email</mat-icon
+      >
+      Contact
+    </button>
   </mat-toolbar>
 </header>
