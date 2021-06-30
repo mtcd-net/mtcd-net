@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { CareersComponent } from './pages/careers/careers.component';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, AboutComponent, ServicesComponent, ProductsComponent, CareersComponent],
@@ -21,6 +22,7 @@ import { CareersComponent } from './pages/careers/careers.component';
     AppRoutingModule,
     MaterialModule,
     LayoutModule,
+    ScullyLibModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
