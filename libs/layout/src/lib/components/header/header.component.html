@@ -1,7 +1,7 @@
 <header>
   <mat-toolbar
     fxLayoutAlign="start center"
-    class="bg-sky-900 text-sky-100 shadow-md"
+    class="bg-sky-900 text-gray-200 shadow-md"
   >
     <a
       class="uppercase hover:text-sky-200"
@@ -11,14 +11,17 @@
       >Metacode</a
     >
     <span fxFlex></span>
-    <a class="hover:text-sky-200" mat-button routerLink="/products">Products</a>
     <a class="hover:text-sky-200" mat-button routerLink="/services">Services</a>
+    <a class="hover:text-sky-200" mat-button routerLink="/products">Products</a>
     <a class="hover:text-sky-200" mat-button routerLink="/careers">Careers</a>
-    <button mat-button class="hover:text-purple-100 bg-purple-900 shadow">
+    <button
+      mat-raised-button
+      class="text-gray-200 bg-emerald-800 hover:text-emerald-100 hover:bg-emerald-900"
+    >
       <mat-icon class="mr-1" aria-hidden="false" aria-label="Email icon"
         >email</mat-icon
       >
-      Email
+      Contact Us
     </button>
   </mat-toolbar>
 </header>

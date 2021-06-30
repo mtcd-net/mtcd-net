@@ -5,6 +5,7 @@ process.env.TAILWIND_MODE = guessProductionMode() ? 'build' : 'watch';
 const colors = require('tailwindcss/colors');
 
 module.exports = {
+  important: true,
   prefix: '',
   mode: 'jit',
   purge: {
@@ -19,7 +20,7 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      gray: colors.coolGray,
+      gray: colors.blueGray,
       red: colors.red,
       yellow: colors.yellow,
       lime: colors.lime,
