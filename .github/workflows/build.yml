@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build
-        run: ng build --prod
+        run: ./node_modules/.bin/ng build --prod
       - name: Scully
         run: npx scully
       - name: Deploy
