@@ -33,5 +33,5 @@ jobs:
           git config --local user.email '<>'
           git add .
           git commit -m 'Add static files'
-          git remote add origin https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} >/dev/null 2>&1
-          git push --force origin static >/dev/null 2>&1
+          git remote add origin https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git push --force origin static
