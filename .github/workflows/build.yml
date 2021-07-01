@@ -24,6 +24,8 @@ jobs:
         run: ./node_modules/.bin/ng build --prod
       - name: Scully
         run: npx scully
+      - name: Verify
+        run: echo ${{ github.repository }}
       - name: Deploy
         run: |
           cp CNAME dist/static
