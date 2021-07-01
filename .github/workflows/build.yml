@@ -34,4 +34,4 @@ jobs:
           git add .
           git commit -m 'Add static files'
           git remote add origin https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git push --force origin static
+          git push --force origin HEAD:static
