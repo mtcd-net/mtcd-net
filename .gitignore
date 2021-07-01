@@ -37,3 +37,12 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Scully
+.scully
+scully.log
+scully/plugins/*.js
+scully/plugins/*.js.map
+apps/**/src/assets/scully-routes.json
+
+
