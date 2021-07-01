@@ -1,0 +1,37 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - cicd
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greeting
+        run: echo 'building...'
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set up
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Build
+        run: nx build --prod
+      - name: Scully
+        run: npx scully
+      - name: Deploy
+        run: |
+          cp CNAME dist/static
+          cd dist/static
+          git init
+          git config --local user.name 'GitHub Runner'
+          git config --local user.email '<>'
+          git add .
+          git commit -m 'Add static files'
+          git remote add origin https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} >/dev/null 2>&1
+          git push --force origin static >/dev/null 2>&1
