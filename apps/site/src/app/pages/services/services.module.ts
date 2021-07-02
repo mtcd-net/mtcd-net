@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+
+import { ServicesRoutingModule } from './services-routing.module';
 import { ServicesComponent } from './services.component';
 
-const routes: Routes = [
-  {
-    path: '',
-    component: ServicesComponent,
-  },
-];
 
 @NgModule({
-  declarations: [ServicesComponent],
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+  declarations: [
+    ServicesComponent
+  ],
+  imports: [
+    CommonModule,
+    ServicesRoutingModule
+  ]
 })
-export class ServicesModule {}
+export class ServicesModule { }
