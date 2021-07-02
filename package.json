@@ -82,6 +82,7 @@
     "jest": "27.0.3",
     "jest-preset-angular": "9.0.3",
     "prettier": "2.2.1",
+    "source-map-explorer": "^2.5.2",
     "tailwindcss": "2.2.4",
     "ts-jest": "27.0.3",
     "ts-node": "~9.1.1",
