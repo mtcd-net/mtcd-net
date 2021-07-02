@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from '@mtcd-net/material';
@@ -14,7 +14,7 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
   declarations: [AppComponent, HomeComponent],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
+    // BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
     LayoutModule,
